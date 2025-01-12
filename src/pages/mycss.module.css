@@ -1,0 +1,22 @@
+.general{
+    display: grid;
+    grid-gap: 1rem;
+    flex-wrap: wrap;
+    padding:2rem;
+    grid-template-columns: repeat(4, minmax(0, 1fr));
+    justify-content: left;
+}
+.insertform{
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    width: 28rem;
+    margin: auto;
+    margin-top: 2rem;
+}
+.generalpage{
+    margin: 3rem;
+    border: 2px solid gray;
+    border-radius: 2rem;
+    padding-top: 2rem;
+}
