@@ -14,9 +14,9 @@ export default function TimeHook(){
         }
     },[])
     return(
-        <div>
-            Timer : {time}
-            <button onClick={()=>clearInterval(intervalref.current)}>stop</button>
+        <div className="bg-gradient-to-r from-green-500 to-pink-500 p-6 stacked-fractions grid grid-cols-3 gap-4">
+            <p className="font-mono text-lg font-bold bg-blue-300">Timer : {time}</p>
+            <button onClick={()=>clearInterval(intervalref.current)} className=" bg-pink-200 text-semibold italic font-semibold text-blue-500">stop</button>
         </div>
     )
 }

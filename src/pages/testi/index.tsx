@@ -1,4 +1,5 @@
 import { useState, useEffect } from 'react';
+import TimeHook from './TimeHook';
 
 const MyComponent = () => {
     const [selectedValue, setSelectedValue] = useState('');
@@ -16,16 +17,17 @@ const MyComponent = () => {
     }, [selectedValue]);
 
     return (
-        <div>
+        <div className="bg-green-800 bg-origin-content hover:bg-cyan-600 p-4 border-4 border-dashed  hover:bg-origin-padding">
             <select onChange={handleChange}>
                 <option value="">انتخاب کنید</option>
                 <option value="option1">گزینه 1</option>
                 <option value="option2">گزینه 2</option>
             </select>
-
+            <button className="bg-blue-500 md:bg-green-500 ...">Subscribe</button>
             {/* نمایش کامپونت بر اساس selectedValue */}
             {selectedValue === 'option1' && <ComponentA />}
             {selectedValue === 'option2' && <ComponentB />}
+            <TimeHook/>
         </div>
     );
 };

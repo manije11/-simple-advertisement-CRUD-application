@@ -116,7 +116,7 @@ export default function Home() {
                     src={fileUrl ? fileUrl : `/images/${data.image}`}
                     alt="image of sofa" className="w-48 h-48 rounded-md" width={500} height={500}/>
 
-            <input value={fileUrl ? fileUrl : data.image}/>
+            {/*<input value={fileUrl ? fileUrl : data.image}/>*/}
             <input
                 type="file" className="my-1"
                  onChange={handleFileChange}
